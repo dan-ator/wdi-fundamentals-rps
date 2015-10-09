@@ -1,7 +1,7 @@
 'use strict';
 
 function getInput() {
-    console.log("Please choose either 'rock', 'paper', or 'scissors'.")
+    console.log("Please choose either 'rock', 'paper', or 'scissors'.");
     return prompt();
 }
 
@@ -78,6 +78,7 @@ function playToFive() {
     console.log("Let's play Rock, Paper, Scissors");
     var playerWins = 0;
     var computerWins = 0;
+    var move;
     while (playerWins<5 && computerWins<5) {
         var playerMove = getPlayerMove(move);
         var computerMove = getComputerMove(move);
